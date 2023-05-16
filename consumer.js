@@ -34,7 +34,7 @@ function createConsumer(config, onData) {
 };
 
 
-async function consumerExample() {
+async function consumerKafka() {
   if (process.argv.length < 3) {
     console.log("Please provide the configuration file path as the command line argument");
     process.exit(1);
@@ -59,7 +59,7 @@ async function consumerExample() {
   });
 }
 
-consumerExample()
+consumerKafka()
   .catch((err) => {
     console.error(`Something went wrong:\n${err}`);
     process.exit(1);
